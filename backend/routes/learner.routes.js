@@ -6,7 +6,7 @@ const router = express.Router();
 
 /**
  * @route   POST /api/learners
- * @desc    Register a new learner with photo and nationalId photo
+ * @desc    Register a new learner (with profile photo and national ID photo)
  */
 router.post('/', uploadMultiple, async (req, res) => {
   try {
@@ -21,7 +21,7 @@ router.post('/', uploadMultiple, async (req, res) => {
       plan,
     } = req.body;
 
-    if (age < 18) {
+    if (parseInt(age) < 18) {
       return res.status(400).json({ error: "Age must be 18 or above." });
     }
 
@@ -34,8 +34,8 @@ router.post('/', uploadMultiple, async (req, res) => {
       location,
       age,
       plan,
-      photo: req.files['photo']?.[0]?.filename || null,
-      nationalIdPhoto: req.files['nationalIdPhoto']?.[0]?.filename || null,
+      photo: req.files?.photo?.[0]?.filename || null,
+      nationalIdPhoto: req.files?.nationalIdPhoto?.[0]?.filename || null,
       approved: false,
       completed: false,
     });
@@ -44,8 +44,11 @@ router.post('/', uploadMultiple, async (req, res) => {
   } catch (err) {
     console.error("🔥 [POST /api/learners] Registration failed:", err);
 
-    if (err.name === 'SequelizeValidationError' || err.name === 'SequelizeUniqueConstraintError') {
-      const errorMessages = err.errors.map(e => e.message);
+    if (
+      err.name === 'SequelizeValidationError' ||
+      err.name === 'SequelizeUniqueConstraintError'
+    ) {
+      const errorMessages = err.errors.map((e) => e.message);
       return res.status(400).json({ error: errorMessages.join(', ') });
     }
 
@@ -55,13 +58,13 @@ router.post('/', uploadMultiple, async (req, res) => {
 
 /**
  * @route   GET /api/learners/pending
+ * @desc    Get all pending learner requests
  */
 router.get('/pending', async (req, res) => {
   try {
     const pendingLearners = await Learner.findAll({
-      where: { approved: false }
+      where: { approved: false },
     });
-
     res.json(pendingLearners);
   } catch (err) {
     console.error("🔥 [GET /api/learners/pending] Fetch failed:", err);
@@ -71,6 +74,7 @@ router.get('/pending', async (req, res) => {
 
 /**
  * @route   GET /api/learners/approved
+ * @desc    Get all approved learners
  */
 router.get('/approved', async (req, res) => {
   try {
@@ -86,6 +90,7 @@ router.get('/approved', async (req, res) => {
 
 /**
  * @route   PATCH /api/learners/approve/:id
+ * @desc    Approve a learner
  */
 router.patch('/approve/:id', async (req, res) => {
   try {
@@ -106,6 +111,7 @@ router.patch('/approve/:id', async (req, res) => {
 
 /**
  * @route   PATCH /api/learners/:id/complete
+ * @desc    Mark learner as completed
  */
 router.patch('/:id/complete', async (req, res) => {
   try {
@@ -126,6 +132,7 @@ router.patch('/:id/complete', async (req, res) => {
 
 /**
  * @route   DELETE /api/learners/:id
+ * @desc    Delete a learner by ID
  */
 router.delete('/:id', async (req, res) => {
   try {
