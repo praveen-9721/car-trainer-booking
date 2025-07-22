@@ -1,0 +1,35 @@
+{
+  "trainers": [
+    {
+      "image": "images/trainer1.jpg",
+      "name": "Ahmed Al-Saleh",
+      "experience": "7 years of professional driving instruction"
+    },
+    {
+      "image": "images/trainer2.png",
+      "name": "Fatima Khalid",
+      "experience": "5 years of experience with both manual and automatic vehicles"
+    },
+    {
+      "image": "images/trainer3.jpg",
+      "name": "Mohammed Rizwan",
+      "experience": "8+ years teaching learners from beginner to advanced level"
+    },
+    {
+      "image": "images/trainer4.png",
+      "name": "Sana Al-Mutairi",
+      "experience": "6 years specializing in female driving instruction"
+    },
+    {
+      "image": "images/trainer5.png",
+      "name": "Omar Farooq",
+      "experience": "10 years with a focus on defensive driving skills"
+    },
+    {
+      "image": "images/trainer6.png",
+      "name": "Abdullah",
+      "experience": "12 years with a focus on defensive driving skills"
+    }
+
+  ]
+}

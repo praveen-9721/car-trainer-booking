@@ -1,0 +1,45 @@
+{
+  "plans": [
+    {
+      "planId": "Very BASIC",
+      "title": "Basic Learner Plan",
+      "daysPerWeek": 2,
+      "totalWeeks": 4,
+      "priceSAR": 20,
+      "vehicleType": "Automatic"
+    },
+
+    {
+      "planId": "BASIC",
+      "title": "Basic Learner Plan",
+      "daysPerWeek": 3,
+      "totalWeeks": 4,
+      "priceSAR": 20,
+      "vehicleType": "Automatic"
+    },
+    {
+      "planId": "STANDARD I",
+      "title": "Standard Learner Plan",
+      "daysPerWeek": 4,
+      "totalWeeks": 4,
+      "priceSAR": 20,
+      "vehicleType": "Manual or Automatic"
+    },
+    {
+      "planId": "STANDARD II",
+      "title": "Standard Learner Plan",
+      "daysPerWeek": 5,
+      "totalWeeks": 4,
+      "priceSAR": 20,
+      "vehicleType": "Manual & Automatic"
+    },
+    {
+      "planId": "INTENSIVE",
+      "title": "Intensive Fast-Track Plan",
+      "daysPerWeek": 6,
+      "totalWeeks": 4,
+      "priceSAR": 20,
+      "vehicleType": "Manual & Automatic "
+    }
+  ]
+}

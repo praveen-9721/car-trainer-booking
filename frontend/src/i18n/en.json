@@ -1,0 +1,325 @@
+{
+  "navbar_section": {
+    "learn": "Learn",
+    "to": "To",
+    "drive": "Drive",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "plans": "Plans",
+    "trainers": "Trainers",
+    "contact": "Contact",
+    "register": "Register",
+    "toggle_language": "عربي",
+    "learner": "As Learner",
+    "learner_desc": "Join our platform and start your driving journey with expert trainers.",
+    "register_as_learner": "Register as Learner",
+    "trainer": "As Trainer",
+    "trainer_desc": "Become a part of our trainer community and shape the next generation of drivers.",
+    "register_as_trainer": "Register as Trainer"
+  },
+  "footer": {
+    "about": "About Us",
+    "aboutDescription": "We provide the best car driving learning experience with certified trainers and flexible scheduling.",
+    "contact": "Contact Us",
+    "email": "Email",
+    "phone": "Phone",
+    "legal": "Legal",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "follow": "Follow Us",
+    "admin": "Admin Login",
+    "adminLogin": "Admin Login",
+    "rights": "All Rights Reserved.",
+    "madeBy": "Made by PRAVEEN with",
+    "in": "in Saudi Arabia"
+  },
+  "home_heading": "Welcome to Learn To Drive 🚗",
+  "home_subheading": "Book the best car driving trainers near you and become a confident driver with ease and flexibility.",
+  "home_quote": "The best way to learn driving is with the right trainer who makes you feel confident, safe, and ready for the road.",
+  "home_counters": {
+    "schools": "Training Schools",
+    "trainers": "Male and Female Trainers",
+    "students": "Students"
+  },
+  "services": {
+    "learnerTitle": "As a Learner",
+    "learnerDescription": "Learn To Drive is a trusted driving institute committed to training both male and female learners across the Kingdom. With a team of experienced and certified trainers, we ensure each learner receives personalized, high-quality instruction tailored to their pace and comfort. Our flexible learning system allows learners to choose the time and location that suits them best—anywhere in the Kingdom of the Saudi Arabia, at any time. Safety is at the core of our teaching approach, providing a secure and supportive environment throughout the training journey. We take pride in developing highly proficient and responsible drivers who are confident on the road. Whether you’re a complete beginner or someone looking to refine your driving skills, Learn To Drive is here to guide you every step of the way. We also offer full support in preparing for and obtaining your official driving license. Join us to experience a safe, flexible, and effective way to learn driving.",
+    "registerLearner": "Register as Learner",
+    "trainerTitle": "As a Trainer",
+    "trainerDescription": "Become a part of the Learn To Drive trainer community and help shape safe and skilled drivers across the Kingdom of the Saudi Arabia. We offer a flexible and professional platform where both male and female trainers can teach with ease and confidence. Our system ensures comfort and safety by allowing male trainers to work exclusively with male learners, and female trainers with female learners. This respectful and culturally sensitive approach creates a comfortable environment for both trainers and students. As a trainer, you have the freedom to choose your working hours and locations, making it easier to balance your schedule. Whether you're an experienced instructor or a confident driver ready to guide others, we welcome you to join our mission. With Learn To Drive, you’ll be part of a trusted network dedicated to responsible driving education. Start your journey with us and inspire learners to drive smart and safe.",
+    "registerTrainer": "Register as Trainer",
+    "keyFeatures": "Our Key Features",
+    "feature1Title": "Flexible Learning",
+    "feature1Desc": "Choose time, place, and trainer as per your comfort.",
+    "feature2Title": "Safety First",
+    "feature2Desc": "Trainers ensure a safe and supportive learning environment.",
+    "feature3Title": "Experienced Trainers",
+    "feature3Desc": "Learn from certified professionals with hands-on expertise."
+  },
+  "plans": {
+    "title": "Our Plans",
+    "subtitle": "Ready to hit the road?",
+    "description": "Choose a plan that matches your speed. Whether you're a beginner or need fast-track learning, our driving plans are tailored for your journey. Learn confidently with experienced instructors!",
+    "price": "Price",
+    "titleLabel": "Title",
+    "daysPerWeek": "Days per Week",
+    "totalWeeks": "Total Weeks",
+    "vehicleType": "Vehicle Type",
+    "buyButton": "Buy",
+
+    "veryBasicTitle": "Basic Learner Plan",
+    "basicTitle": "Basic Learner Plan",
+    "standardTitle": "Standard Learner Plan",
+    "intensiveTitle": "Intensive Fast-Track Plan",
+
+    "automatic": "Automatic",
+    "manualOrAutomatic": "Manual or Automatic",
+    "manualAndAutomatic": "Manual & Automatic"
+  },
+  "about": {
+    "title": "About Us",
+    "subTitle": "About Learn to Drive",
+    "description": "Learn To Drive is a proudly Saudi-authorized driving training company with a strong nationwide presence. We operate 67+ certified driving schools and have a skilled team of over 1200 professional trainers. We’ve successfully trained 2000+ individuals, helping them become confident drivers and assisting them in obtaining their licenses. Our programs cater to both male and female learners, with specialized management and support for female students. Trainers are well-qualified and experienced, ensuring quality instruction. Choose to learn with your own vehicle or a company car. We’re committed to safe, personalized, and empowering driver education across the Kingdom.",
+    "ourTrainers": "Our Trainers",
+    "ourFocus": "Our Focus"
+  },
+  "focus": {
+    "fun": {
+      "image": "images/focus_fun.jpg",
+      "title": "Learning and driving with friends is always fun",
+      "text": "We make learning enjoyable by creating a friendly and relaxed environment."
+    },
+    "safety": {
+      "image": "images/focus_safety.jpg",
+      "title": "Your safety first wherever you drive",
+      "text": "Our trainers prioritize your safety on every road and every ride."
+    },
+    "proficient": {
+      "image": "images/focus_proficient.jpg",
+      "title": "We make you highly proficient driver",
+      "text": "We help you gain the confidence and skills you need to drive anywhere."
+    },
+    "licence": {
+      "image": "images/focus_licence.jpg",
+      "title": "We help you get your Driver's Licence with no hassle",
+      "text": "From start to finish, we guide you through every step of licensing."
+    },
+    "anywhere": {
+      "image": "images/focus_anywhere.jpg",
+      "title": "Anytime Anywhere at your ease",
+      "text": "Choose when and where you want to learn. We adapt to your needs."
+    }
+  },
+  "contact": {
+    "feedbackTitle": "What Our Learners Say",
+    "title": "Contact Us",
+    "brand": "Drive To Learn",
+    "tagline1": "Your journey to confident driving starts here.",
+    "tagline2": "We provide professional, supportive, and flexible driving training.",
+    "name": "Name",
+    "email": "Email or Contact",
+    "message": "Your Enquiry",
+    "submit": "Submit"
+  },
+  "adminLogin": {
+    "title": "Admin Login",
+    "username": "Username",
+    "password": "Password",
+    "login": "Login",
+    "cancel": "Cancel",
+    "invalidCredentials": "Invalid credentials"
+  },
+  "adminDashboard": {
+    "title": "Admin Panel",
+    "overview": "Overview",
+    "learnerRequests": "Learner Requests",
+    "approvedRequests": "Approved Requests",
+    "trainers": "Trainers",
+    "bookingHistory": "Booking History",
+    "paymentHistory": "Payment History",
+    "logout": "Logout"
+  },
+  "learnerRequests": {
+    "loading": "Loading...",
+    "pendingTitle": "Pending Learner Requests",
+    "noPending": "No pending learners.",
+    "approvedSuccess": "✅ Learner approved!",
+    "approvedFail": "❌ Failed to approve.",
+    "deleteConfirm": "Are you sure you want to delete this learner?",
+    "deleteSuccess": "🗑️ Learner deleted!",
+    "deleteFail": "❌ Failed to delete.",
+    "detailsTitle": "Learner Details"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "contact": "Contact",
+    "age": "Age",
+    "gender": "Gender",
+    "location": "Location",
+    "nationalId": "National ID",
+    "plan": "Selected Plan",
+    "profilePhoto": "Profile Photo",
+    "nationalIdPhoto": "National ID Photo"
+  },
+  "buttons": {
+    "approve": "Approve",
+    "delete": "Delete",
+    "view": "View",
+    "download": "Download",
+    "next": "Next"
+  },
+  "approvedRequest": {
+    "title": "✅ Learner Management",
+    "searchPlaceholder": "Search by name or email...",
+    "filters": {
+      "approved": "Approved",
+      "completed": "Completed",
+      "all": "All"
+    },
+    "noLearners": "No learners in this view.",
+    "email": "Email",
+    "contact": "Contact",
+    "location": "Location",
+    "age": "Age",
+    "status": "Status",
+    "completed": "Completed",
+    "ongoing": "Approved (Training Underway)",
+    "markButton": "Mark as Completed",
+    "view": "View",
+    "details": "Learner Details",
+    "name": "Name",
+    "nationalId": "National ID",
+    "plan": "Plan",
+    "markedSuccessfully": "Learner marked as completed successfully.",
+    "markFailed": "Error marking learner as completed."
+  },
+  "trainerRequest": {
+    "title": "👤 Trainer Details",
+    "name": "Name",
+    "gender": "Gender",
+    "email": "Email",
+    "contact": "Contact",
+    "location": "Location",
+    "experience": "Experience",
+    "years": "years",
+    "age": "Age",
+    "nationalId": "National ID",
+    "licenseNumber": "License No",
+    "status": "Status",
+    "approved": "Approved",
+    "pending": "Pending Approval",
+    "profilePhoto": "Profile Photo",
+    "licensePhoto": "License Photo",
+    "nationalIdPhoto": "National ID Photo",
+    "trainingHistory": "Training History",
+    "comingSoon": "Coming soon – training logs per trainer"
+  },
+  "trainerList": {
+    "title": "🚗 Trainer Management",
+    "pending": "Pending",
+    "approved": "Approved",
+    "searchPlaceholder": "Search by name or email",
+    "noTrainers": "No trainers found.",
+    "email": "Email",
+    "contact": "Contact",
+    "experience": "Experience",
+    "years": "years",
+    "status": "Status",
+    "approve": "Approve",
+    "view": "View",
+    "delete": "Delete",
+    "downloadPdf": "Download PDF",
+    "confirmApprove": "Approve this trainer?",
+    "approvalFailed": "Approval failed",
+    "approvalError": "Error approving trainer",
+    "confirmDelete": "Are you sure you want to delete this trainer?",
+    "deletionError": "Error deleting trainer"
+  },
+  "learner_form": {
+    "title": "👨‍🎓 Learner Registration",
+    "name": "Name",
+    "email": "Email",
+    "contact": "Contact",
+    "gender": "Select Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "age": "Age (min 18)",
+    "location": "Location",
+    "nationalId": "National ID",
+    "plan": "Choose a Plan",
+    "veryBasic": "VERY BASIC",
+    "basic": "BASIC",
+    "standard1": "STANDARD I",
+    "standard2": "STANDARD II",
+    "intensive": "INTENSIVE",
+    "uploadPhoto": "Upload Profile Picture",
+    "uploadNationalIdPhoto": "Upload National ID Photo",
+    "register": "Register",
+    "cancel": "Cancel",
+    "ageAlert": "Learner must be at least 18 years old.",
+    "success": "✅ Learner registered successfully!",
+    "error": "❌ Something went wrong!",
+    "submitError": "❌ Error submitting form"
+  },
+  "trainerForm": {
+    "title": "Trainer Registration",
+    "name": "Name",
+    "email": "Email",
+    "contact": "Contact",
+    "selectGender": "Select Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "age": "Age (min 18)",
+    "experience": "Driving Experience (years)",
+    "location": "Location",
+    "nationalId": "National ID",
+    "licenseNumber": "License Number",
+    "uploadProfile": "Upload Profile Photo",
+    "uploadNationalId": "Upload National ID Photo",
+    "uploadLicense": "Upload License Image",
+    "register": "Register",
+    "cancel": "Cancel",
+    "ageAlert": "Trainer must be at least 18 years old.",
+    "success": "✅ Trainer registered successfully!",
+    "error": "❌ Something went wrong!",
+    "errorSubmit": "❌ Error submitting form"
+  },
+  "trainer_section": {
+    "trainers": [
+      {
+        "image": "images/trainer1.jpg",
+        "name": "Ahmed Al-Saleh",
+        "experience": "7 years of professional driving instruction"
+      },
+      {
+        "image": "images/trainer2.png",
+        "name": "Fatima Khalid",
+        "experience": "5 years of experience with both manual and automatic vehicles"
+      },
+      {
+        "image": "images/trainer3.jpg",
+        "name": "Mohammed Rizwan",
+        "experience": "8+ years teaching learners from beginner to advanced level"
+      },
+      {
+        "image": "images/trainer4.png",
+        "name": "Sana Al-Mutairi",
+        "experience": "6 years specializing in female driving instruction"
+      },
+      {
+        "image": "images/trainer5.png",
+        "name": "Omar Farooq",
+        "experience": "10 years with a focus on defensive driving skills"
+      },
+      {
+        "image": "images/trainer6.png",
+        "name": "Abdullah",
+        "experience": "12 years with a focus on defensive driving skills"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "learn": "Learn",
+  "to": "To",
+  "drive": "Drive",
+  "home": "Home",
+  "services": "Services",
+  "plans": "Plans",
+  "about": "About",
+  "contact": "Contact",
+  "register": "Register",
+  "toggle_language": "عربي",
+  "learner": "Learner",
+  "learner_desc": "Start your driving journey with expert guidance and flexible scheduling.",
+  "register_as_learner": "Register as Learner",
+  "trainer": "Trainer",
+  "trainer_desc": "Share your expertise and help learners gain confidence on the road.",
+  "register_as_trainer": "Register as Trainer"
+}

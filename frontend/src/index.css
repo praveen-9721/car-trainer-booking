@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html[dir='rtl'] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir='ltr'] {
+  direction: ltr;
+  text-align: left;
+}
+
+
+.input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300 dark:bg-gray-700 dark:text-white;
+}
+
+/* index.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.quote-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2)
+  );
+  transform: skewX(-20deg);
+  animation: sparkle 3s infinite;
+  pointer-events: none;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  animation: typing 6s steps(80, end), blink 0.8s step-end infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.typing-effect {
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -1,0 +1,54 @@
+{
+    "feedbacks": [
+        {
+            "name": "Ahmed Al-Qahtani",
+            "city": "Riyadh",
+            "feedback": "Learning to drive here was an amazing experience. The instructors were professional and patient."
+        },
+        {
+            "name": "Fatima Al-Zahrani",
+            "city": "Jeddah",
+            "feedback": "I gained so much confidence behind the wheel. Highly recommended!"
+        },
+        {
+            "name": "Mohammed Al-Harbi",
+            "city": "Dammam",
+            "feedback": "The sessions were flexible and well-structured. Got my license smoothly!"
+        },
+        {
+            "name": "Aisha Al-Dossary",
+            "city": "Khobar",
+            "feedback": "Very supportive trainers and easy-to-understand lessons."
+        },
+        {
+            "name": "Salman Al-Shehri",
+            "city": "Mecca",
+            "feedback": "Great experience! They helped me overcome my fear of driving."
+        },
+        {
+            "name": "Noor Al-Otaibi",
+            "city": "Medina",
+            "feedback": "The learning environment was friendly and respectful. Loved the practical training."
+        },
+        {
+            "name": "Yousef Al-Fahad",
+            "city": "Tabuk",
+            "feedback": "Driving lessons were efficient and instructors were always on time."
+        },
+        {
+            "name": "Lama Al-Suwailem",
+            "city": "Abha",
+            "feedback": "Everything was well organized and explained clearly."
+        },
+        {
+            "name": "Omar Al-Tamimi",
+            "city": "Taif",
+            "feedback": "The trainers are amazing and helped me pass the test on my first attempt!"
+        },
+        {
+            "name": "Rania Al-Mutairi",
+            "city": "Al Baha",
+            "feedback": "Perfect training and support. I highly recommend Learn to Drive!"
+        }
+    ]
+}
