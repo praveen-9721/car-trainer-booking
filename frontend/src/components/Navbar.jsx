@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import LearnerForm from './LearnerForm';
 import TrainerForm from './TrainerForm';
 import DarkModeToggle from './DarkModeToggle';
-import logoImg from '../assets/logo.png';
+import logoImg from '../assets/Logo.png';
 
 export default function Navbar() {
   const [popupOpen, setPopupOpen] = useState(false);
