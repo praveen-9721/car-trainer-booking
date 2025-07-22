@@ -39,7 +39,7 @@ export default function LearnerForm({ onClose }) {
     });
 
     try {
-      const res = await fetch('https://car-trainer-booking.onrender.com/api/learners', {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/learners`, {
         method: 'POST',
         body: formData,
         mode: 'cors',
