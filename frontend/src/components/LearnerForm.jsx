@@ -38,8 +38,17 @@ export default function LearnerForm({ onClose }) {
       formData.append(key, value);
     });
 
+    const API_URL = import.meta.env.VITE_API_BASE_URL;
+
+    // 🔍 Debug logs
+    console.log("API URL:", API_URL);
+    console.log("FormData entries:");
+    for (let pair of formData.entries()) {
+      console.log(pair[0] + ':', pair[1]);
+    }
+
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/learners`, {
+      const res = await fetch(`${API_URL}/api/learners`, {
         method: 'POST',
         body: formData,
         mode: 'cors',
