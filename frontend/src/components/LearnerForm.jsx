@@ -39,7 +39,7 @@ export default function LearnerForm({ onClose }) {
     });
 
     try {
-      const res = await fetch('http://localhost:5000/api/learners', {
+      const res = await fetch('https://car-trainer-booking.onrender.com/api/learners', {
         method: 'POST',
         body: formData,
       });
