@@ -9,8 +9,12 @@ import sequelize from './config/db.js'; // DB connection
 
 const app = express();
 
+// ✅ CORS setup
+app.use(cors({
+  origin: '*', // You can replace * with your Vercel domain for stricter security
+}));
+
 // ✅ Middleware
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
