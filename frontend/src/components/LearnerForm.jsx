@@ -42,6 +42,7 @@ export default function LearnerForm({ onClose }) {
       const res = await fetch('https://car-trainer-booking.onrender.com/api/learners', {
         method: 'POST',
         body: formData,
+        mode: 'cors',
       });
 
       const result = await res.json();
@@ -49,16 +50,16 @@ export default function LearnerForm({ onClose }) {
         alert(t('learner_form.success'));
         if (onClose) onClose();
       } else {
-        alert(result.error || t('learner_form.error'));
+        alert(result?.error || t('learner_form.error'));
       }
     } catch (err) {
-      console.error(err);
+      console.error('Form submission error:', err);
       alert(t('learner_form.submitError'));
     }
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center px-4">
       <div className="bg-blue-100 dark:bg-gray-900 rounded-lg p-6 w-full max-w-lg shadow-xl relative">
         <button
           onClick={onClose}
