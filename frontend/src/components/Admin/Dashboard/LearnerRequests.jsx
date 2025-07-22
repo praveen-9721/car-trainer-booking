@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 export default function LearnerRequests() {
   const { t } = useTranslation();
   const [learners, setLearners] = useState([]);
@@ -12,7 +14,7 @@ export default function LearnerRequests() {
   const fetchLearners = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/api/learners/pending');
+      const res = await fetch(`${API_BASE_URL}/api/learners/pending`);
       const data = await res.json();
       setLearners(data);
     } catch (err) {
@@ -27,7 +29,7 @@ export default function LearnerRequests() {
 
   const approveLearner = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/learners/approve/${id}`, {
+      const res = await fetch(`${API_BASE_URL}/api/learners/approve/${id}`, {
         method: 'PATCH',
       });
       if (res.ok) {
@@ -37,6 +39,7 @@ export default function LearnerRequests() {
         alert(t('learnerRequests.approvedFail'));
       }
     } catch (err) {
+      alert(t('learnerRequests.approvedFail'));
       console.error(err);
     }
   };
@@ -46,7 +49,7 @@ export default function LearnerRequests() {
     if (!confirm) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/learners/${id}`, {
+      const res = await fetch(`${API_BASE_URL}/api/learners/${id}`, {
         method: 'DELETE',
       });
       if (res.ok) {
@@ -56,6 +59,7 @@ export default function LearnerRequests() {
         alert(t('learnerRequests.deleteFail'));
       }
     } catch (err) {
+      alert(t('learnerRequests.deleteFail'));
       console.error(err);
     }
   };
@@ -68,8 +72,8 @@ export default function LearnerRequests() {
   };
 
   const images = selectedLearner ? [
-    `http://localhost:5000/uploads/${selectedLearner.photo}`,
-    `http://localhost:5000/uploads/${selectedLearner.nationalIdPhoto}`
+    `${API_BASE_URL}/uploads/${selectedLearner.photo}`,
+    `${API_BASE_URL}/uploads/${selectedLearner.nationalIdPhoto}`
   ] : [];
 
   if (loading) return <p className="p-4">{t('learnerRequests.loading')}</p>;
@@ -89,33 +93,33 @@ export default function LearnerRequests() {
             >
               <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="w-full md:w-2/3 space-y-1">
-                  <p><strong>{t('form.name')}:</strong> {learner.name}</p>
-                  <p><strong>{t('form.email')}:</strong> {learner.email}</p>
-                  <p><strong>{t('form.contact')}:</strong> {learner.contact}</p>
-                  <p><strong>{t('form.age')}:</strong> {learner.age}</p>
-                  <p><strong>{t('form.location')}:</strong> {learner.location}</p>
-                  <p><strong>{t('form.nationalId')}:</strong> {learner.nationalId}</p>
+                  <p><strong>Name:</strong> {learner.name}</p>
+                  <p><strong>Email:</strong> {learner.email}</p>
+                  <p><strong>Contact:</strong> {learner.contact}</p>
+                  <p><strong>Age:</strong> {learner.age}</p>
+                  <p><strong>Location:</strong> {learner.location}</p>
+                  <p><strong>National ID:</strong> {learner.nationalId}</p>
                   <div className="flex space-x-2 mt-2">
                     <button
                       onClick={() => approveLearner(learner.id)}
                       className="bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700"
-                    >✅ {t('buttons.approve')}</button>
+                    >✅ Approve</button>
                     <button
                       onClick={() => deleteLearner(learner.id)}
                       className="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700"
-                    >🗑️ {t('buttons.delete')}</button>
+                    >🗑️ Delete</button>
                   </div>
                 </div>
                 <div className="mt-4 md:mt-0 flex flex-col items-center">
                   <img
-                    src={`http://localhost:5000/uploads/${learner.photo}`}
+                    src={`${API_BASE_URL}/uploads/${learner.photo}`}
                     alt="Learner"
                     className="w-24 h-24 object-cover rounded"
                   />
                   <button
                     onClick={() => setSelectedLearner(learner)}
                     className="mt-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
-                  >👁️ {t('buttons.view')}</button>
+                  >👁️ View</button>
                 </div>
               </div>
             </div>
@@ -132,28 +136,28 @@ export default function LearnerRequests() {
             >❌</button>
             <h3 className="text-lg font-bold mb-4">👁️ {t('learnerRequests.detailsTitle')}</h3>
             <div className="space-y-2">
-              <p><strong>{t('form.name')}:</strong> {selectedLearner.name}</p>
-              <p><strong>{t('form.email')}:</strong> {selectedLearner.email}</p>
-              <p><strong>{t('form.contact')}:</strong> {selectedLearner.contact}</p>
-              <p><strong>{t('form.age')}:</strong> {selectedLearner.age}</p>
-              <p><strong>{t('form.gender')}:</strong> {selectedLearner.gender}</p>
-              <p><strong>{t('form.location')}:</strong> {selectedLearner.location}</p>
-              <p><strong>{t('form.nationalId')}:</strong> {selectedLearner.nationalId}</p>
-              <p><strong>{t('form.plan')}:</strong> {selectedLearner.plan}</p>
+              <p><strong>Name:</strong> {selectedLearner.name}</p>
+              <p><strong>Email:</strong> {selectedLearner.email}</p>
+              <p><strong>Contact:</strong> {selectedLearner.contact}</p>
+              <p><strong>Age:</strong> {selectedLearner.age}</p>
+              <p><strong>Gender:</strong> {selectedLearner.gender}</p>
+              <p><strong>Location:</strong> {selectedLearner.location}</p>
+              <p><strong>National ID:</strong> {selectedLearner.nationalId}</p>
+              <p><strong>Plan:</strong> {selectedLearner.plan}</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
-                  <p className="font-semibold">{t('form.profilePhoto')}:</p>
+                  <p className="font-semibold">Profile Photo:</p>
                   <img
-                    src={`http://localhost:5000/uploads/${selectedLearner.photo}`}
+                    src={`${API_BASE_URL}/uploads/${selectedLearner.photo}`}
                     alt="Profile"
                     className="w-full h-48 object-cover rounded cursor-pointer"
                     onClick={() => { setImageIndex(0); setSelectedImage(images[0]); }}
                   />
                 </div>
                 <div>
-                  <p className="font-semibold">{t('form.nationalIdPhoto')}:</p>
+                  <p className="font-semibold">National ID Photo:</p>
                   <img
-                    src={`http://localhost:5000/uploads/${selectedLearner.nationalIdPhoto}`}
+                    src={`${API_BASE_URL}/uploads/${selectedLearner.nationalIdPhoto}`}
                     alt="National ID"
                     className="w-full h-48 object-cover rounded cursor-pointer"
                     onClick={() => { setImageIndex(1); setSelectedImage(images[1]); }}
@@ -177,7 +181,7 @@ export default function LearnerRequests() {
               <button
                 onClick={() => handleDownload(selectedImage)}
                 className="bg-white text-black px-2 py-1 rounded"
-              >⬇️ {t('buttons.download')}</button>
+              >⬇️ Download</button>
               {imageIndex < images.length - 1 && (
                 <button
                   onClick={() => {
@@ -186,7 +190,7 @@ export default function LearnerRequests() {
                     setSelectedImage(images[nextIndex]);
                   }}
                   className="bg-white text-black px-2 py-1 rounded"
-                >{t('buttons.next')} ➡️</button>
+                >Next ➡️</button>
               )}
             </div>
           </div>
