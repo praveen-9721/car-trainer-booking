@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Eye, X } from 'lucide-react';
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 export default function ApprovedRequests() {
   const { t } = useTranslation();
   const [learners, setLearners] = useState([]);
@@ -11,7 +13,7 @@ export default function ApprovedRequests() {
 
   const fetchApproved = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/learners/approved');
+      const res = await fetch(`${API_BASE_URL}/api/learners/approved`);
       const data = await res.json();
       setLearners(data);
     } catch (err) {
@@ -21,7 +23,7 @@ export default function ApprovedRequests() {
 
   const markAsCompleted = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/learners/${id}/complete`, {
+      const res = await fetch(`${API_BASE_URL}/api/learners/${id}/complete`, {
         method: 'PATCH',
       });
 
@@ -129,7 +131,7 @@ export default function ApprovedRequests() {
 
               <div className="flex flex-col items-center">
                 <img
-                  src={`http://localhost:5000/uploads/${learner.photo}`}
+                  src={`${API_BASE_URL}/uploads/${learner.photo}`}
                   alt="Learner"
                   className="w-24 h-24 object-cover rounded border"
                 />
@@ -158,7 +160,7 @@ export default function ApprovedRequests() {
             <h3 className="text-lg font-semibold mb-4">{t('approvedRequest.details')}</h3>
             <div className="space-y-2 text-sm">
               <img
-                src={`http://localhost:5000/uploads/${selectedLearner.photo}`}
+                src={`${API_BASE_URL}/uploads/${selectedLearner.photo}`}
                 alt="Profile"
                 className="w-28 h-28 object-cover rounded mx-auto mb-4"
               />
@@ -176,7 +178,7 @@ export default function ApprovedRequests() {
                   : t('approvedRequest.ongoing')}
               </p>
               <img
-                src={`http://localhost:5000/uploads/${selectedLearner.nationalIdPhoto}`}
+                src={`${API_BASE_URL}/uploads/${selectedLearner.nationalIdPhoto}`}
                 alt="National ID"
                 className="w-full max-h-52 object-contain rounded border mt-3"
               />
